@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.2.13.RELEASE'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'ru.redguy.testtask'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compileOnly 'org.springframework.boot:spring-boot-starter-jetty'
+    runtimeOnly 'com.h2database:h2'
+    implementation 'org.apache.camel.springboot:camel-servlet-starter:3.11.0'
+    implementation 'org.apache.camel.springboot:camel-mail-starter:3.11.0'
+    implementation 'org.apache.camel.springboot:camel-jackson-starter:3.11.0'
+    implementation 'org.apache.camel.springboot:camel-spring-boot-starter:3.11.0'
+}
+
+//utf-8
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+}
+
+jar {
+    enabled = true
+}
+
+bootJar {
+    mainClassName = 'ru.redguy.testtask.Main'
+}
+
+bootJar {
+    classifier = 'boot'
+}

@@ -1,0 +1,276 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-02-28T20:40:13.304Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_35ef14033fc941888c665b665b27cc9a",
+      "parentId": "wrk_d0f5ba550abb4b52a80cf8e96e288c3f",
+      "modified": 1709146385288,
+      "created": 1709146346690,
+      "url": "localhost:8080/subscriber",
+      "name": "Unsubscribe",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_ee957c7ee5f047e1bf3d72db22fc13f1",
+            "name": "email",
+            "value": "me@redguy.ru",
+            "description": ""
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1709146346690,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_d0f5ba550abb4b52a80cf8e96e288c3f",
+      "parentId": null,
+      "modified": 1709144437136,
+      "created": 1709144437136,
+      "name": "My Collection",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_2a8a6903505f4259afd9c3617b4a3e19",
+      "parentId": "wrk_d0f5ba550abb4b52a80cf8e96e288c3f",
+      "modified": 1709150965190,
+      "created": 1709146042566,
+      "url": "localhost:8080/subscriber",
+      "name": "Subscribe",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_c1a1e63e0db04fbf81b6c0a4947aa891",
+            "name": "email",
+            "value": "me@redguy.ru",
+            "description": ""
+          },
+          {
+            "id": "pair_7c1708b865df481aac0e6c69d222dec0",
+            "name": "fio",
+            "value": "Пушкин Александр Сергеевич",
+            "description": ""
+          },
+          {
+            "id": "pair_4e7d050a629a40738f4356f61b884241",
+            "name": "city",
+            "value": "Москва",
+            "description": ""
+          },
+          {
+            "id": "pair_3768a12b33b74ea0b40ab851a05fac1f",
+            "name": "position",
+            "value": "Middle Java Developer",
+            "description": ""
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1709146042566,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e7e0466110e44703aa93a95478bcd229",
+      "parentId": "wrk_d0f5ba550abb4b52a80cf8e96e288c3f",
+      "modified": 1709146639461,
+      "created": 1709144531934,
+      "url": "localhost:8080/vacancy",
+      "name": "Create new vacancy",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "name": "name",
+            "value": "Программист",
+            "id": "pair_460669564eb24ae9927594f379b045be"
+          },
+          {
+            "id": "pair_03c584f039044e78a5d64ebe9bf4fb50",
+            "name": "description",
+            "value": "Требуется Java-программист!",
+            "description": ""
+          },
+          {
+            "id": "pair_6441913211ed42e4977eceb3b6992ff5",
+            "name": "position",
+            "value": "Middle Java Developer",
+            "description": ""
+          },
+          {
+            "id": "pair_3aa97d2c3e1545f397ff89cf34aae58c",
+            "name": "salary",
+            "value": "50000",
+            "description": ""
+          },
+          {
+            "id": "pair_edb1f8775d4b4a1192df23a2da5cbf45",
+            "name": "experience",
+            "value": "Самые интересные проекты",
+            "description": ""
+          },
+          {
+            "id": "pair_8afd6ac717a741e48faa83b30b1e6c33",
+            "name": "city",
+            "value": "Москва",
+            "description": ""
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1709144531934,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e0be16787020444d90cdc8411dc3e989",
+      "parentId": "wrk_d0f5ba550abb4b52a80cf8e96e288c3f",
+      "modified": 1709145309717,
+      "created": 1709144476085,
+      "url": "localhost:8080/vacancy",
+      "name": "Get vacancy by name",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_30f11f9d98ff4f7c85f8460c478598cc",
+          "name": "name",
+          "value": "Программист",
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1709144476085,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_13a80880db2e43dd921e7b86ac30c127",
+      "parentId": "wrk_d0f5ba550abb4b52a80cf8e96e288c3f",
+      "modified": 1709144473946,
+      "created": 1709144447628,
+      "url": "localhost:8080/vacancy",
+      "name": "Get vacancy by today",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1709144447628,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_b3f1311a4f53d8fa7e92421a6d9d3d093dbb90da",
+      "parentId": "wrk_d0f5ba550abb4b52a80cf8e96e288c3f",
+      "modified": 1709144437140,
+      "created": 1709144437140,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1709144437140,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_b3f1311a4f53d8fa7e92421a6d9d3d093dbb90da",
+      "parentId": "wrk_d0f5ba550abb4b52a80cf8e96e288c3f",
+      "modified": 1709144437141,
+      "created": 1709144437141,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
